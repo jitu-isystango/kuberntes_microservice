@@ -1,1 +1,17 @@
 
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: demo1
+  name: demo1
+  namespace: demo
+spec:
+  type: NodePort
+  ports:
+  - name: "demo1-service"
+    port: 5000
+    targetPort: 8081
+    nodePort: 31001
+  selector:
+    app: demo1
