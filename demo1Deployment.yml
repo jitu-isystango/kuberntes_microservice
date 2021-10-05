@@ -16,7 +16,7 @@ spec:
         app: demo1
     spec:
       containers:
-      - image: dockersamples/examplevotingapp_vote:before
+      - image: jitudv/demo_repo:demo1_prod
         name: demo1
         ports:
         - containerPort: 8081
