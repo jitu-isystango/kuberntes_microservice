@@ -1,1 +1,23 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo1
+  name: demo1
+  namespace: demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo1
+  template:
+    metadata:
+      labels:
+        app: demo1
+    spec:
+      containers:
+      - image: dockersamples/examplevotingapp_vote:before
+        name: demo1
+        ports:
+        - containerPort: 8081
+          name: demo1
