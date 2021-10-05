@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Ingress
+metadata:
+  name: demo-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /demo1
+        backend:
+          serviceName: demo1-service
+          servicePort: 31001
+      - path: /demo2
+        backend:
+          serviceName: demo2-service
+          servicePort: 31002
