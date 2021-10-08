@@ -9,8 +9,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - name: "demo1-service"
-    port: 5000
+  - name: demo1
+    port: 8080
     targetPort: 8081
     nodePort: 31001
   selector:

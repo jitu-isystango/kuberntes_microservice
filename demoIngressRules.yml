@@ -8,9 +8,9 @@ spec:
       paths:
       - path: /demo1
         backend:
-          serviceName: demo1-service
+          serviceName: demo1
           servicePort: 31001
       - path: /demo2
         backend:
-          serviceName: demo2-service
+          serviceName: demo2
           servicePort: 31002
